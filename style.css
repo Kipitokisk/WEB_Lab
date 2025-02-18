@@ -1,1 +1,44 @@
-/* add your CSS here */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 1rem 2rem;
+    font-size: large;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #292b2e;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#kit-logo {
+    color: red;
+}
+
+
+.oswald-logo {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
