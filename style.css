@@ -269,3 +269,32 @@ nav ul li a:hover {
 .business-version {
     background-color: #8a270e79;
 }
+
+.about_us h1 {
+    margin-top: 5%;
+    font-family: "Oswald", serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #6D2323;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.about_us p {
+    padding: 2rem;
+    background-color: hsl(24, 47%, 90%);
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #6D2323;
+    line-height: 2.5rem;
+    text-align: center;
+}
+
+#vic {
+    font-weight: bold;
+    background-color: #e9ec0f;
+}
