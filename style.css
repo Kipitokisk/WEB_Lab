@@ -39,9 +39,9 @@ nav ul li a:hover {
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-  }
+}
 
-  .hero {
+.hero {
     font-family: "Oswald", serif;
     display: flex;
     height: 90vh;
@@ -99,4 +99,3 @@ nav ul li a:hover {
     height: 95%;
     border-radius: 20rem;
 }
-  
