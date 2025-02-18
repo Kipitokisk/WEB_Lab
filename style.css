@@ -41,7 +41,7 @@ nav ul li a:hover {
     font-style: normal;
   }
 
-  .hero {
+.hero {
     font-family: "Oswald", serif;
     display: flex;
     height: 90vh;
@@ -64,7 +64,7 @@ nav ul li a:hover {
 
 .hero-left h1 {
     font-size: 4.5rem;
-    margin-top: 30%;
+    margin-top: 25%;
     color: #fff;
     margin-left: 12%;
     margin-right: 3%;
@@ -74,16 +74,17 @@ nav ul li a:hover {
 .hero-left p {
     font-family: sans-serif;
     font-size: 1.5rem;
-    margin-top: 5rem;
-    color: #fff;
-    margin-left: 17%;
-    margin-right: 10%;
+    margin-top: 10%;
+    color: #e6e4e4;
+    margin-left: 22%;
+    margin-right: 15%;
 }
 
 .hero-left button {
-    margin-top: 3rem;
+    margin-top: 5%;
     margin-left: 17%;
     margin-right: 10%;
+    background-color: #fff;
     color: #6D2323;
     border-radius: 25px;
     height: 3.5rem;
@@ -91,12 +92,181 @@ nav ul li a:hover {
     border: none;
     font-size: 1.2rem;
     font-weight: 700;
+}
 
+.hero-left button:hover {
+    background-color: #ddd;
+    border-radius: 25px;
+    transition: background-color 0.3s;
 }
 
 .hero-right img {
     width: 85%;
     height: 95%;
     border-radius: 20rem;
+}
+
+.product {
+    display: grid;
+    
+}
+
+.top-product {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.top-product p {
+    padding: 2rem;
+    background-color: hsl(24, 47%, 90%);
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: #6D2323;
+    line-height: 2.5rem;
+}
+
+.top-product p span {
+    font-weight: bold;
+    color: #A31D1D;
+}
+
+.top-product img {
+    width: 45%;
+    margin-top: 3%;
+    margin-right: 5%;
+}
+
+.middle-product {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-product ul li {
+    padding: 2rem;
+    background-color: hsl(24, 47%, 90%);
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    margin-top: 2%;
+    margin-right: 10%;
+    color: #6D2323;
+}
+
+.middle-product ul li span {
+    font-weight: bold;
+    color: #A31D1D;
+}
+
+.middle-product img {
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.bottom-product {
+    display: block;
+    text-align: center;
+}
+
+#conclusion {
+    margin-top: 5%;
+    font-family: sans-serif;
+    font-size: 2.7rem;
+    color: #A31D1D;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#motto {
+    margin-top: 5%;
+    font-family: "Oswald", serif;
+    font-weight: bold;
+    font-size: 5rem;
+    color: #6D2323;
+    text-align: center;
+}
+
+.versions {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 4%;
+    gap: 15%;
+    font-size: 2rem;
+}
+
+.versions div {
+    flex: 1;
+    flex-direction: column;
+    border-radius: 15%;
+    font-size: 2rem;
+    padding: 3%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.versions div h3 {
+    text-align: center;
+    margin-top: 5%;
+    font-weight: bold;
+    color: #6D2323;
+}
+
+.versions div button {
+    margin-top: 5%;
+    margin-left: 17%;
+    margin-right: 10%;
+    background-color: #6D2323;
+    color: #fff;
+    border-radius: 25px;
+    height: 3.5rem;
+    width: 10rem;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.versions p {
+    font-size: 1.3rem;
+}
+
+.versions button:hover {
+    background-color: #411414;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.versions ul {
+    list-style-type: disc;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.trial-version {
+    background-color: #e5d0ac79;
+}
+
+.standart-version {
+    background-color: #e7c7aa;
+}
+
+.trial-version {
+    background-color: #e5d0ac79;
+}
+
+.business-version {
+    background-color: #8a270e79;
 }
   
