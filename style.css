@@ -18,6 +18,19 @@ nav ul li a {
     color: #292b2e;
     padding: 0.5rem 1rem;
     transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 nav ul li a:hover {
@@ -92,6 +105,8 @@ nav ul li a:hover {
     border: none;
     font-size: 1.2rem;
     font-weight: 700;
+    cursor: pointer;
+    animation: pulsate 1.5s infinite ease-in-out;
 }
 
 .hero-left button:hover {
@@ -214,7 +229,6 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    text-align: center;
     border-radius: 15%;
     font-size: 2rem;
     padding: 3%;
