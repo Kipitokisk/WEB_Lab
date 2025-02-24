@@ -22,11 +22,11 @@ This project is simple landing page for a project done last semester at PBL. The
 - **GitHub pages** for hosting
 
 ## Screenshots
-![Hero page](screenshots\Hero_page.png)
-![Product page](screenshots\Product_page.png)
-![Price page](screenshots\Price_page.png)
-![About us page](screenshots\About_us_page.png)
-![Contact us page](screenshots\Contact_us_page.png)
+![Hero page](screenshots/Hero_page.png)
+![Product page](screenshots/Product_page.png)
+![Price page](screenshots/Price_page.png)
+![About us page](screenshots/About_us_page.png)
+![Contact us page](screenshots/Contact_us_page.png)
 
 
 ## Live Demo
