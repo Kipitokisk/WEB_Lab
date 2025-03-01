@@ -206,15 +206,10 @@ nav ul li a:hover {
         margin-right: 10%;
         width: 80%;
     }
-
-    .pricing {
-        display: none;
-    }
 }
 
 .product {
     display: grid;
-    
 }
 
 .top-product {
@@ -293,6 +288,32 @@ nav ul li a:hover {
     margin-right: 5%;
 }
 
+@media screen and (max-width:975px) {
+    .top-product {
+        flex-direction: column;
+    }
+
+    .top-product img {
+        width: 90%;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .middle-product {
+        flex-direction: column-reverse;
+    }
+
+    .middle-product ul li {
+        margin: 5% 5%;
+    }
+
+    .middle-product img {
+        width: 90%;
+        margin: 0 0;
+        justify-content: center;
+    }
+}
+
 #motto {
     margin-top: 5%;
     font-family: "Oswald", serif;
@@ -363,6 +384,7 @@ nav ul li a:hover {
 .versions p {
     font-size: 1.3rem;
     margin-top: auto; /* Ensures it stays above the button */
+    margin-bottom: 3%;
     text-align: center;
 }
 
@@ -395,6 +417,21 @@ nav ul li a:hover {
 
 .business-version {
     background-color: #8a270e79;
+}
+
+@media screen and (max-width:975px) {
+    .versions {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .versions div {
+        margin-top: 5%;
+        width: 80%;
+        height: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
 }
 
 .about_us h1 {
@@ -480,7 +517,6 @@ nav ul li a:hover {
 .contact_us form input,
 .contact_us form select,
 .contact_us form textarea {
-    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -507,4 +543,22 @@ nav ul li a:hover {
     background-color: #8a2c2c;
 }
 
+@media screen and (max-width:975px) {
+    .contact_us div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .contact_us p {
+        font-size: 1.5rem;
+        margin: 0 5%;
+        text-align: center;
+    }
+
+    .contact_us form {
+        max-width: 100%;
+        width: 90%;
+    }
+}
