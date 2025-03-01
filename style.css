@@ -63,8 +63,6 @@ nav ul li a:hover {
     font-style: normal;
 }
 
-
-/*Header mobile*/
 @media screen and (max-width: 975px) {
     .menu-label {
         display: block;
@@ -207,14 +205,8 @@ nav ul li a:hover {
         width: 80%;
     }
 
-    .pricing {
-        display: none;
-    }
-}
-
 .product {
     display: grid;
-    
 }
 
 .top-product {
@@ -293,6 +285,32 @@ nav ul li a:hover {
     margin-right: 5%;
 }
 
+@media screen and (max-width:975px) {
+    .top-product {
+        flex-direction: column;
+    }
+
+    .top-product img {
+        width: 90%;
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .middle-product {
+        flex-direction: column-reverse;
+    }
+
+    .middle-product ul li {
+        margin: 5% 5%;
+    }
+
+    .middle-product img {
+        width: 90%;
+        margin: 0 0;
+        justify-content: center;
+    }
+}
+
 #motto {
     margin-top: 5%;
     font-family: "Oswald", serif;
@@ -357,12 +375,13 @@ nav ul li a:hover {
     border: none;
     font-size: 1.2rem;
     font-weight: 700;
-    margin-top: auto; /* Pushes the button to the bottom */
+    margin-top: auto; 
 }
 
 .versions p {
     font-size: 1.3rem;
-    margin-top: auto; /* Ensures it stays above the button */
+    margin-top: auto; 
+    margin-bottom: 3%;
     text-align: center;
 }
 
@@ -395,6 +414,21 @@ nav ul li a:hover {
 
 .business-version {
     background-color: #8a270e79;
+}
+
+@media screen and (max-width:975px) {
+    .versions {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .versions div {
+        margin-top: 5%;
+        width: 80%;
+        height: 100%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
 }
 
 .about_us h1 {
@@ -480,7 +514,6 @@ nav ul li a:hover {
 .contact_us form input,
 .contact_us form select,
 .contact_us form textarea {
-    width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -507,4 +540,97 @@ nav ul li a:hover {
     background-color: #8a2c2c;
 }
 
+@media screen and (max-width:975px) {
+    .contact_us div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .contact_us p {
+        font-size: 1.5rem;
+        margin: 0 5%;
+        text-align: center;
+    }
+
+    .contact_us form {
+        max-width: 100%;
+        width: 90%;
+    }
+}
+
+.mascot-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    z-index: 10;
+}
+
+.mascot {
+    width: 125px;
+    border: solid 2px #6D2323;
+    border-radius: 35%;
+    opacity: 0;
+    animation: appear 0.5s ease forwards, jump 1s ease-in-out infinite;
+    animation-delay: 2s, 2s;
+}
+
+.bubble {
+    border: solid 1px #6D2323;
+    visibility: hidden;
+    position: absolute;
+    bottom: 120%; 
+    right: 50%;
+    transform: translateX(-50%);
+    background: #f0f0f0;
+    padding: 15px;
+    border-radius: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    color: #333;
+    animation: jump 1s ease-in-out infinite, appear 0.5s ease forwards;
+    animation-delay: 2s, 2s;  
+    opacity: 0;  
+    white-space: nowrap;
+}
+
+.bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px; 
+    right: 5%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    background: #f0f0f0;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mascot-container:hover .bubble {
+    visibility: visible;
+    display: block;
+}
+
+@keyframes jump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1; 
+    }
+}
