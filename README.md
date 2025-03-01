@@ -17,13 +17,12 @@ This laboratory is about improving the Landing page from Lab2 with a responsive 
 - **GitHub pages** for hosting
 
 ## Screenshots
-![Hero page mobile](screenshots/Hero_page_mobile.png)
-![Product page mobile](screenshots/Product_page_mobile.png)
-![Price page mobile](screenshots/Price_page_mobile.png)
-![Final page mobile](screenshots/Final_page_mobile.png)
-![Mascot mobile](screenshots/Mascot.png)
-![Drop down menu mobile](screenshots/Drop_down_menu.png)
-
+![Hero page mobile](screenshots/Hero_page_mobile.PNG)
+![Product page mobile](screenshots/Product_page_mobile.PNG)
+![Price page mobile](screenshots/Price_page_mobile.PNG)
+![Final page mobile](screenshots/Final_page_mobile.PNG)
+![Mascot mobile](screenshots/Mascot.PNG)
+![Drop down menu mobile](screenshots/Drop_down_menu.PNG)
 
 ## Live Demo
 [View the deployed project here](https://kipitokisk.github.io/WEB_Lab/)
