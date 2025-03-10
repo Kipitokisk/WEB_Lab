@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <header class="oswald-logo">
@@ -25,16 +26,16 @@
         </nav>
     </header>
 
-    <section class="hero">
-      <div class="hero-left">
-        <h1>The ultimate tool for maximum corporate productivity</h1>
-        <p>"Wasting time is the most expensive mistake you can make in business." <br> - Grant Cardone</p>
-        <button onclick="window.location.href='#product'">Get started</button>
+    <div class="flex flex-col md:flex-row h-[90vh] bg-[#6D2323] font-oswald m-0">
+      <div class="flex flex-1 flex-col items-center justify-center text-center gap-y-7">
+        <h1 class="mt-[25%] text-[#fff] !text-6xl tracking-[3px]">The ultimate tool for maximum corporate productivity</h1>
+        <p class="font-sans text-[1.5rem] mt-[10%] text-[#e6e4e4]">"Wasting time is the most expensive mistake you can make in business." <br> - Grant Cardone</p>
+        <button onclick="window.location.href='#product'" class="hover:bg-[#ddd] hover:rounded-[25px] mt-[5%] bg-[#fff] text-[#6D2323] rounded-[25px] h-[3.5rem] w-[10rem] border-none text-2xl text-[700] cursor-pointer pulsate-animation transition-all duration-300">Get started</button>
       </div>
-      <div class="hero-right">
-        <img class="hero-img" src="images\hero.avif">
-      <div>
-    </section>
+      <div class="max-md:hidden flex flex-1 justify-center items-center">
+        <img class="w-[85%] h-[95%] rounded-[20rem]" src="images\hero.avif">
+      </div>
+    </div>
 
     <section class="product" id="product">
       <div class="top-product">
